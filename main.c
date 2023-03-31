@@ -6,5 +6,5 @@ static int add_num(int a, int b){
 
 int main() {
    printf("%d \n", add_num(5,5));
-   return 0
+   return 0;
 }
