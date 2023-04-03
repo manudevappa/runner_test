@@ -14,7 +14,11 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
+    - name: Create directory
+      run: |
+        mkdir bin
+
     - name: Build and test
       run: |
-        gcc -o program main.c
-        ./program
+        gcc -o bin/program main.c
+        ./bin/program
