@@ -22,3 +22,9 @@ jobs:
       run: |
         gcc -o bin/program main.c
         ./bin/program
+
+    - name: Upload executable
+      uses: actions/upload-artifact@v2
+      with:
+        name: program
+        path: bin/program
